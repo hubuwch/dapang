@@ -1,8 +1,8 @@
 {
   "pages":[
-    "pages/index/index",
+    "pages/shopCar/shopCar",
     "pages/logs/logs",
-    "pages/shopCar/shopCar"
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -13,19 +13,16 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "text": "首页"
+      
     },{
       "pagePath": "pages/logs/logs",
-      "text": "日志",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "text": "日志"
+      
     },{
       "pagePath": "pages/shopCar/shopCar",
-      "text": "购物车",
-      "iconPath": "",
-      "selectedIconPath": ""
+      "text": "购物车"
+      
     }]
   }
 }

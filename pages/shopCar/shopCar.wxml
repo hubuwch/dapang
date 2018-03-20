@@ -1,8 +1,23 @@
 <!--shopCar.wxml-->
-<view >
+<view style=''>
     <view class='title'>{{title}}</view>
-    <view class='money-option'>
-         <view class='select-money'>1元</view>
-         <view class='select-money'>2元</view>
+    <view class='option'>
+         <view class="{{flag ? 'selected' : 'select'}}"  bindtap='onClick' data-text='1'>1元</view>
+         <view class="{{!flag ? 'selected': 'select'}}" bindtap='onClick1' data-text='2'>2元</view>
+    </view>
+    <!-- <view>
+      <form>
+         <input value='' placeholder='请输入金额' type='number' focus='true' confirm-type='done' bindblur='onClick2'></input>
+      </form>
+        
+    </view> -->
+
+    
+    <view class='amount'>
+      <view >支付金额：{{amount}}元</view>
+      <button>立即支付</button>
     </view>
 </view>
+   
+
+
