@@ -1,0 +1,8 @@
+<!--shopCar.wxml-->
+<view >
+    <view class='title'>{{title}}</view>
+    <view class='money-option'>
+         <view class='select-money'>1元</view>
+         <view class='select-money'>2元</view>
+    </view>
+</view>

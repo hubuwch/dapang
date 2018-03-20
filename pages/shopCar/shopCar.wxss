@@ -1,0 +1,12 @@
+.title {
+   text-align: center
+}
+.money-option{
+  padding: 200rpx 0;
+}
+.select-money{
+   display: flex;
+   flex-direction: column; 
+   align-items: center;
+   border: 1rpx solid red;
+}
