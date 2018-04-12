@@ -1,28 +1,32 @@
 {
-  "pages":[
+  "pages": [
+    "pages/home/home",
     "pages/shopCar/shopCar",
     "pages/logs/logs",
     "pages/index/index"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+    "navigationBarTitleText": "乐享生活",
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/index/index",
-      "text": "首页"
-      
-    },{
-      "pagePath": "pages/logs/logs",
-      "text": "日志"
-      
-    },{
-      "pagePath": "pages/shopCar/shopCar",
-      "text": "购物车"
-      
-    }]
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志"
+      },
+      {
+        "pagePath": "pages/shopCar/shopCar",
+        "text": "购物车"
+      }
+    ]
   }
+  
 }

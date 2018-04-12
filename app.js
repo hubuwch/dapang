@@ -12,12 +12,12 @@ App({
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
         if(res.code){
           //发起网络请求
-          wx.request({
-            url: 'http://localhost/users/hello',
-            success: data => {
-              console.log(data);
-            }
-          })
+          // wx.request({
+          //   url: 'http://localhost/users/hello',
+          //   success: data => {
+          //     console.log(data);
+          //   }
+          // })
         }
       }
     })
