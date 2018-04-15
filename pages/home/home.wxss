@@ -10,7 +10,7 @@
 .menu-item{
   width: 100rpx;
   height: 100rpx;
-  /* background-color: red; */
+  /* background-color: red; */ 
   
 }
 
@@ -31,4 +31,21 @@
   flex-direction: row;
   justify-content: space-around;
 
+}
+
+.location{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.location_curr{
+  line-height: 72rpx;
+}
+
+.location_change{
+  margin-top: 10rpx;
+  /* margin-left: -10rpx; */
+}
+.chang_color{
+  background-color: #666666;
 }

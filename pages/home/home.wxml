@@ -9,13 +9,22 @@
   <view>
      <swiper indicator-dots="{{indicatorDots}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{imgUrls}}">
+        <block wx:for="{{imgUrls}}" wx:key="unique">
           <swiper-item>
             <image src="{{item}}" class="slide-image" width="100%" height="100%"/>
           </swiper-item>
         </block>
      </swiper>
 
+  </view>
+  <view class='location'>
+     <view class='location_curr'>
+      <text>当前位置:</text>
+       {{location.city}}{{location.district}}
+     </view>
+     <view class='location_change'>
+       <button size='mini' hover-class='chang_color' bindtap='toSwitchCity'>更改定位</button>
+     </view>
   </view>
 
 </view>
