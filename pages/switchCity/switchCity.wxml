@@ -1,13 +1,28 @@
 <view class="searchLetter touchClass">
-    <view wx:for="{{searchLetter}}" style="height:{{itemH}}px" wx:key="index" data-letter="{{item.name}}" catchtouchstart="searchStart" catchtouchmove="searchMove" catchtouchend="searchEnd">{{item.name}}</view>
+    <view wx:for="{{searchLetter}}" style="height:{{itemH}}px" wx:key="index" data-letter="{{item.name}}" catchtouchstart="searchStart" catchtouchmove="searchMove" catchtouchend="searchEnd">{{item.name}}       </view>
 </view>
 
-<block wx:if="{{isShowLetter}}">
+<!-- <block wx:if="{{isShowLetter}}">
 <view class="showSlectedLetter">
     {{showLetter}}
 </view>
-</block>
-<view>当前选择城市：{{city}}</view>
+</block> -->
+<view class='top'>
+<view class='cur_city'>当前选择城市：{{city}}</view>
+<view class='hot'>
+     <text class='hot_title'>热门城市</text>
+     
+         <view wx:for="{{hotCity}}" class='hotCity' wx:key="unique"  >
+            <view class='city_item' wx:for="{{item}}" wx:for-index="i" wx:key="unique">
+              <navigator url='../home/home?city={{item}} hover-class='navigator-hover' open-type='navigate'>
+              {{item}}
+              </navigator> 
+            </view>
+           
+         </view>
+     
+</view>
+</view>
 <scroll-view scroll-y="true" style="height:{{winHeight}}px" bindscroll="bindScroll" scroll-top="{{scrollTop}}">
     <view class="selection" wx:for="{{cityList}}" wx:key="{{item.initial}}">
         <view class="item_letter">{{item.initial}}</view>

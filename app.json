@@ -1,9 +1,13 @@
 {
   "pages": [
+   
     "pages/home/home",
     "pages/shopCar/shopCar",
     "pages/logs/logs",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/switchCity/switchCity"
+   
+
    
     
   ],

@@ -74,7 +74,7 @@ Page({
 
    toSwitchCity:function(){
      wx.navigateTo({
-       url: 'pages/switchCity/switchCity'
+       url: '../switchCity/switchCity?location='+ this.data.location.city,
      })
    }
 

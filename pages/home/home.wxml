@@ -20,7 +20,7 @@
   <view class='location'>
      <view class='location_curr'>
       <text>当前位置:</text>
-       {{location.city}}{{location.district}}
+       {{location.city}}
      </view>
      <view class='location_change'>
        <button size='mini' hover-class='chang_color' bindtap='toSwitchCity'>更改定位</button>

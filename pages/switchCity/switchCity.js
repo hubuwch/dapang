@@ -13,16 +13,22 @@ Page({
     cityList: [],
     isShowLetter: false,
     scrollTop: 0,
-    city: ""
+    city: "",
+    hotCity:[['北京市','上海市','广州市'],['深圳市','杭州市','南京市'],['武汉市','天津市','西安市']]
   },
   onLoad: function (options) {
     // 生命周期函数--监听页面加载
+    //获取页面传来参数
+    //console.log(options);
+    this.setData({
+      city:options.location
+    });
     var searchLetter = city.searchLetter;
     var cityList = city.cityList();
     // console.log(cityInfo);
 
     var sysInfo = wx.getSystemInfoSync();
-    console.log(sysInfo);
+   // console.log(sysInfo);
     var winHeight = sysInfo.windowHeight;
 
     //添加要匹配的字母范围值
@@ -45,7 +51,7 @@ Page({
       cityList: cityList
     })
 
-    console.log(this.data.cityInfo);
+    //console.log(this.data.cityInfo);
   },
   onReady: function () {
     // 生命周期函数--监听页面初次渲染完成
@@ -96,7 +102,7 @@ Page({
     var tHeight = this.data.tHeight;
     var bHeight = this.data.bHeight;
     var showLetter = 0;
-    console.log(pageY);
+    //console.log(pageY);
     if (startPageY - pageY > 0) { //向上移动
       if (pageY < tHeight) {
         // showLetter=this.mateLetter(pageY,this);

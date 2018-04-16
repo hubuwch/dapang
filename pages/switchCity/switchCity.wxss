@@ -1,1 +1,89 @@
 /* pages/switchCity/switchCity.wxss */
+.searchLetter{
+    position: fixed;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    z-index: 1;
+    font-size: 25rpx;
+    font-family: 'Times New Roman', Times, serif;
+}
+.searchLetter view{
+    height: 50rpx;
+}
+/* .touchClass{
+   // background-color: rgba(0, 0, 0,0.5);
+   // color: #fff;
+} */
+.cur_city{
+  margin-left: 23rpx;
+}
+.showSlectedLetter{
+    background-color: rgba(0, 0, 0,0.5);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    margin: -50px;
+    width: 100px;
+    height: 100px;
+    border-radius:10px; 
+    font-size: 26px;
+    z-index: 1
+}
+.selection{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.item_letter{
+    display: flex;
+    background-color: #f8f8f8;
+    height: 30px;
+    padding-left: 10px;
+    align-items: center;
+    width: 84%;
+    font-size: 25rpx;
+}
+.item_city{
+    display: flex;
+    background-color: #fff;
+    height: 40px;
+    padding-left: 10px;
+    align-items: center;
+    border-bottom: 1px solid #f8f8f8;
+    font-size: 30rpx;
+    
+    
+}
+.hotCity{
+ 
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.city_item{
+  background-color: #fff;
+  margin: 15rpx;
+  width: 171rpx;
+  text-align: center;
+  line-height: 72rpx;
+  border-radius: 15rpx;
+}
+.top{
+   background-color: #f8f8f8;
+   width: 87%;
+
+  }
+.hot_title{
+  margin-left: 23rpx;
+}
